@@ -111,7 +111,7 @@ La medición registrada fue de aproximadamente **2.44 segundos**.
 
 **Resultado:** Evidencia temporal recopilada durante la evaluación del escenario.
 
-![Prueba del escenario UAF](ctf/trigger_uaf.png)
+![Prueba del escenario UAF](ctf/waf_burlado.png)
 
 ![Medición temporal](ctf/2.44s_tiempo.png)
 

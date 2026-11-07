@@ -17,7 +17,7 @@
 ### 1. Bloqueo Inicial (403 Forbidden)
 El WAF de Cloudflare bloqueaba todas las peticiones de ataque detectando los arrays anidados.
 
-<img src="ctf/bloqueo_ctf.png" width="800" />
+<img src="ctf/bloqueo%20ctf.png" width="800" />
 
 <br><br>
 
@@ -26,14 +26,14 @@ Se codificaron los corchetes a `%5B` y `%5D` engañando al WAF. El servidor acep
 
 <img src="ctf/bypass_exitoso.png" width="800" />
 <br>
-<img src="ctf/waf_burlado.png" width="800" />
+<img src="ctf/waf%20burlado.png" width="800" />
 
 <br><br>
 
 ### 3. Trigger UAF y Blind RCE
 Se logró inyectar el payload de corrupción de memoria (UAF) y se confirmó la ejecución remota de comandos mediante una prueba de tiempo (Time-Based).
 
-<img src="ctf/triggue_uaf.png" width="800" />
+<img src="ctf/triggue%20uaf.png" width="800" />
 <br>
 <img src="ctf/2.44s_tiempo.png" width="800" />
 

@@ -94,13 +94,12 @@ Durante la prueba documentada, el servidor respondió con HTTP 200 OK, evidencia
 
 **Resultado:** Se identificó un escenario de evasión de las reglas de inspección evaluadas.
 
-![Prueba de bypass]
-<img src="ctf/bypass%20exitoso.png" width="800" />
+![Prueba de bypass](ctf/bypass_exitoso.png)
+
 
 **Evidencia adicional:**
 
-![Resultado de la evaluación del WAF]
-<img src="ctf/trigger_uaf.png" width="800" />
+![Resultado de la evaluación del WAF](ctf/waf_burlado.png)
 
 ### 4.3. Análisis UAF — Time-Based Testing
 

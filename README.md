@@ -17,32 +17,32 @@
 ### 1. Bloqueo Inicial (403 Forbidden)
 El WAF de Cloudflare bloqueaba todas las peticiones de ataque detectando los arrays anidados.
 
-![Bloqueo Inicial](ctf/bloqueo%20ctf.png)
+![Bloqueo Inicial](ctf/bloqueo_ctf.png)
 
 <br>
 
 ### 2. Bypass Exitoso (200 OK)
 Se codificaron los corchetes a `%5B` y `%5D` engañando al WAF. El servidor aceptó la petición con un 200 OK. El WAF fue burlado.
 
-![Bypass Exitoso](ctf/bypass%20exitoso.png)
+![Bypass Exitoso](ctf/bypass_exitoso.png)
 
-![WAF Burlado](ctf/waf%20burlado.png)
+![WAF Burlado](ctf/waf_burlado.png)
 
 <br>
 
 ### 3. Trigger UAF y Blind RCE
 Se logró inyectar el payload de corrupción de memoria (UAF) y se confirmó la ejecución remota de comandos mediante una prueba de tiempo (Time-Based).
 
-![Trigger UAF](ctf/triggue%20uaf.png)
+![Trigger UAF](ctf/triggue_uaf.png)
 
-![Tiempo de Respuesta](ctf/244s%20tiempo.png)
+![Tiempo de Respuesta](ctf/244s_tiempo.png)
 
 <br>
 
 ### 4. Identificación del Offset de Memoria
 Se determinó que el offset exacto para la función `zif_system` en la build de Cloudflare es `0xA5B9E8` (PHP 8.5.11 x86_64).
 
-![Offset de Memoria](ctf/trigguer uaf.png)
+![Offset de Memoria](ctf/offset.png)
 
 <br>
 

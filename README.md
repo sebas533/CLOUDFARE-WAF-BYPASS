@@ -42,7 +42,7 @@ Se logró inyectar el payload de corrupción de memoria (UAF) y se confirmó la 
 ### 4. Identificación del Offset de Memoria
 Se determinó que el offset exacto para la función `zif_system` en la build de Cloudflare es `0xA5B9E8` (PHP 8.5.11 x86_64).
 
-![Offset de Memoria](ctf/offset.png)
+![Offset de Memoria](ctf/trigguer uaf.png)
 
 <br>
 
